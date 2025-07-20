@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UMAR SOFTDRINK</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #f7f7f7;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(120deg, #ff5e62, #ff9966);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    nav {
+      background: #ff9966;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #333;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .location, .contact {
+      background: #fff;
+      padding: 1rem;
+      margin-top: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #ff9966;
+      color: white;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="your-music.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#location">Location</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Header Section -->
+  <header id="home">
+    <h1>UMAR SOFTDRINK</h1>
+    <p>Refreshing Every Moment 🍹</p>
+  </header>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery">
+    <img src="drink1.jpg" width="100px" alt="Fruit Blast" />
+    <img src="drink2.jpg" width="100px" alt="Cool Cola" />
+    <img src="drink3.jpg" width="100px" alt="Lemon Zing" />
+  </section>
+
+  <!-- Location Section -->
+  <section id="location" class="location">
+    <h2>📍 Our Location</h2>
+    <p>No. 12 Juice Street, Kano, Nigeria</p>
+    <iframe 
+      src="https://maps.google.com/maps?q=Kano,%20Nigeria&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+      width="100%" height="300" style="border:0;" allowfullscreen loading="lazy">
+    </iframe>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>📞 Contact Us</h2>
+    <p>Phone: +234 80 1234 5678</p>
+    <p>Email: umarsoftdrink@business.com</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 UMAR SOFTDRINK. All rights reserved.
+  </footer>
+</body>
+</html>p
